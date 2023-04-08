@@ -1,0 +1,116 @@
+.formSide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  gap: 20px;
+}
+
+@media (max-width: 1098px) {
+  .formSide {
+    width: 100% !important;
+    margin-top: 50px !important;
+  }
+
+  .inputWrapper {
+    width: 80% !important;
+  }
+  .expirationWrapper {
+    width: 80% !important;
+    gap: 10px !important;
+  }
+  .confirmButton {
+    width: 80% !important;
+  }
+}
+
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputWrapper {
+  width: 50%;
+
+  label {
+    color: var(--very-dark-violet);
+    font-size: 12px;
+    letter-spacing: 0.12rem;
+  }
+
+  input {
+    border: 1px solid var(--light-grayish-violet);
+    border-radius: 8px;
+    font-size: 18px;
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &::placeholder {
+      color: var(--light-grayish-violet);
+    }
+
+    &:focus {
+      outline: none;
+      border: 1px solid var(--violet);
+    }
+  }
+
+  .inputInvalid {
+    border: 1px solid var(--red);
+    &:focus {
+      outline: none;
+      border: 1px solid var(--red);
+    }
+  }
+
+  .errorMessage {
+    color: var(--red);
+    font-size: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+.expirationWrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  gap: 10px;
+
+  .dateInputWrapper {
+    display: flex;
+    gap: 10px;
+
+    .dateInputItem {
+      width: 100%;
+    }
+  }
+}
+
+.confirmButton {
+  background-color: var(--very-dark-violet);
+  color: var(--light-grayish-violet);
+  width: 50%;
+  padding: 14px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  margin-top: 20px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

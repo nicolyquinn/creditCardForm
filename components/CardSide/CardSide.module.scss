@@ -1,0 +1,98 @@
+.cardSide {
+  background-image: url("/bg-main-desktop.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  width: 50%;
+}
+
+@media (max-width: 900px) {
+  .cardSide {
+    background-image: url("/bg-main-mobile.png");
+    width: 100vw !important;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    height: 45vh;
+    padding-top: 20px;
+  }
+
+  .frontCard {
+    margin-left: 10px !important;
+    margin-top: -90px;
+    padding-right: 90px !important;
+
+    h1 {
+      font-size: 24px !important;
+    }
+  }
+
+  .backCard {
+    margin-left: 50px !important;
+
+    p {
+      padding-right: 135px !important;
+    }
+  }
+}
+
+.frontCard {
+  background-image: url("/bg-card-front.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 447px;
+  height: 245px;
+  margin-left: 120px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--white);
+
+  h1 {
+    font-size: 28px;
+    letter-spacing: 0.18em;
+  }
+
+  .userInfo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+    p {
+      font-size: 14px;
+      letter-spacing: 0.1em;
+    }
+  }
+}
+
+.backCard {
+  background-image: url("/bg-card-back.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 447px;
+  height: 245px;
+  margin-left: 220px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  p {
+    padding-right: 55px;
+    padding-bottom: 2px;
+    color: var(--white);
+    letter-spacing: 0.13em;
+  }
+}
+
+.cardLogo {
+  width: 80px;
+  height: auto;
+  margin: 10px;
+}
+
+.userName {
+  text-transform: uppercase;
+}
