@@ -157,7 +157,7 @@ export const FormSide = () => {
                 onChange={handleCardCVCChange}
               />
               {cardCVCError && (
-                <div className={style.errorMessage}>Can't be blank</div>
+                <div className={style.errorMessage}>Can&apos;t be blank</div>
               )}
             </label>
           </div>

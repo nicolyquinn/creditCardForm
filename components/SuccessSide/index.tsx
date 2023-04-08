@@ -11,7 +11,7 @@ export const SucessSide = () => {
         src="/icon-complete.svg"
       />
       <h1>THANK YOU!</h1>
-      <p>We've added your card details</p>
+      <p>We&apos;ve added your card details</p>
       <button className={style.continueButton}>Continue</button>
     </div>
   );
